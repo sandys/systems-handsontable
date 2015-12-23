@@ -16,6 +16,7 @@
       "crypto-js": "npm:crypto-js@^3.1.5",
       "formula": "npm:formula@^0.0.2-beta2",
       "handsontable/handsontable": "github:handsontable/handsontable@^0.20.2",
+      "history": "npm:history@^1.13.1",
       "immutable": "npm:immutable@^3.7.6",
       "lodash": "npm:lodash@^3.10.1",
       "react": "npm:react@^0.13.3",
