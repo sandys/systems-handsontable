@@ -1,0 +1,80 @@
+
+  "name": "hands-test",
+  "version": "0.0.1",
+  "main": "js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "jspm-server --port=4001 --no-browser"
+  },
+  "jspm": {
+    "dependencies": {
+      "babel-core": "npm:babel-core@^6.3.15",
+      "babel-preset-es2015": "npm:babel-preset-es2015@^6.3.13",
+      "babel-preset-react": "npm:babel-preset-react@^6.3.13",
+      "babel-preset-stage-0": "npm:babel-preset-stage-0@^6.3.13",
+      "babel-register": "npm:babel-register@^6.3.13",
+      "handsontable/handsontable": "github:handsontable/handsontable@^0.20.2",
+      "immutable": "npm:immutable@^3.7.6",
+      "jstat": "npm:jstat@^1.1.5",
+      "lodash": "npm:lodash@^3.10.1",
+      "markdown": "npm:markdown@^0.5.0",
+      "merge": "npm:merge@^1.2.0",
+      "numeral": "npm:numeral@^1.5.3",
+      "numeric": "npm:numeric@^1.2.6",
+      "react": "npm:react@^0.13.3",
+      "react-data-grid": "npm:react-data-grid@^0.13.25",
+      "react-router": "npm:react-router@^1.0.2",
+      "underscore": "npm:underscore@^1.8.3"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    },
+    "overrides": {
+      "github:handsontable/handsontable@0.20.2": {
+        "main": [
+          "dist/handsontable.full.js",
+          "dist/handsontable.full.css"
+        ],
+        "format": "global",
+        "shim": {
+          "dist/handsontable.full.js": {
+            "deps": [
+              "zeroclipboard",
+              "moment",
+              "pikaday",
+              "jquery",
+              "dist/moment.js"
+            ],
+            "exports": "Handsontable"
+          }
+        },
+        "dependencies": {
+          "zeroclipboard": "npm:zeroclipboard@^2.1.6",
+          "pikaday": "npm:pikaday@^1.3.2",
+          "moment": "npm:moment@^2.2.0"
+        }
+      }
+    }
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.15",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "babel-register": "^6.3.13",
+    "chai": "^3.4.1",
+    "chai-spies": "^0.7.1",
+    "enzyme": "^1.1.0",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.1",
+    "gulp-mocha": "^2.2.0",
+    "gulp-util": "^3.0.7",
+    "highlight.js": "^8.9.1",
+    "jspm": "^0.16.19",
+    "jspm-server": "^1.0.1",
+    "require-dir": "^0.3.0",
+    "testdom": "^2.0.0"
+  }
+}
