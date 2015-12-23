@@ -1,5 +1,4 @@
 import React from 'react';
-import {render} from 'react';
 import moment from 'moment';
 import {default as Handsontable} from 'handsontable/handsontable';
 import { Router, Route, Link, Redirect,IndexRoute } from 'react-router';
@@ -26,14 +25,11 @@ componentDidMount(){
 
 
   render(){
-     return this.props.children;
+		<div ref="spreadsheet"></div>
   }
 }
-  render(
-		
-		  <div>
-		<div ref="spreadsheet"></div>
-      <div id="done">{return moment().utc()  + "Z" } </div> ,document.querySelector('.app')
-	  </div>
 
+  React.render(
+	  React.createElement(Index),
+        document.querySelector('.app') 
   );

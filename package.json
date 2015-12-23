@@ -19,6 +19,7 @@
       "history": "npm:history@^1.13.1",
       "immutable": "npm:immutable@^3.7.6",
       "lodash": "npm:lodash@^3.10.1",
+      "moment": "npm:moment@^2.2.0",
       "react": "npm:react@^0.13.3",
       "react-router": "npm:react-router@^1.0.2"
     },
