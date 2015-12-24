@@ -23,7 +23,6 @@ System.config({
     "core-js": "npm:core-js@1.2.6",
     "crypto-js": "npm:crypto-js@3.1.5",
     "formula": "npm:formula@0.0.2-beta2",
-    "handsontable/handsontable": "github:handsontable/handsontable@0.20.2",
     "history": "npm:history@1.17.0",
     "immutable": "npm:immutable@3.7.6",
     "lodash": "npm:lodash@3.10.1",

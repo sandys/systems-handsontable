@@ -1,9 +1,15 @@
 {
-  "main": ["dist/handsontable.full.js", "dist/handsontable.full.css"],
-  "format": "global",
+  "main": ["handsontable.full"],
+  "files": [
+      "dist/handsontable.full.js",
+      "dist/handsontable.full.css",
+      "plugins/*",
+      "src/*"
+     ],
+  "format": "cjs",
   "shim": {
-    "dist/handsontable.full.js": {
-      "deps": ["zeroclipboard","moment","pikaday","jquery", "dist/moment.js"],
+    "handsontable.full": {
+      "deps": ["zeroclipboard","moment","pikaday","jquery"],
       "exports": "Handsontable"
     }
   },

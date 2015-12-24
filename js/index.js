@@ -1,6 +1,6 @@
 import React from 'react';
 import moment from 'moment';
-import {default as Handsontable} from 'handsontable/handsontable';
+import {default as Handsontable} from 'handsontable.full.min';
 import { Router, Route, Link, Redirect,IndexRoute } from 'react-router';
 
 
